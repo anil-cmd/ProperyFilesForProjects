@@ -6,7 +6,7 @@ spring:
     username: root
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: CREATE
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
