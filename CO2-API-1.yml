@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/majorP
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+
+  
+  application:
+    name: CO2-API-1
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:1001/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+amazonProperties:
+  endpointUrl: https://891377275716.signin.aws.amazon.com/console
+  accessKey: AKIA47CRZ2NCN6BZL3G4
+  secretKey: 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
+  bucketName: chanbucket0307
